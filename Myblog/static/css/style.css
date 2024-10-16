@@ -1,0 +1,101 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #111;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-preview {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    opacity: 0; /* Скрыто при загрузке */
+    transform: translateY(20px); /* Немного смещено вниз */
+    transition: opacity 1s ease, transform 1s ease; /* Переход для плавности */
+}
+
+/* Активируем плавность появления после загрузки страницы */
+.post-preview.show {
+    opacity: 1; /* Плавное проявление */
+    transform: translateY(0); /* Возвращение на место */
+}
+
+/* Стили для страницы детального просмотра поста */
+.post-detail {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.post-detail.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.post-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.post-date {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.post-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

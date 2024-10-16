@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+{% block main %}
+<div class="container py-5">
+    <article class="post-detail">
+        <h1 class="post-title">{{ post.title }}</h1>
+        <p class="post-date">{{ post.create }}</p>
+        <div class="post-content">
+            {{ post.body }}
+        </div>
+    </article>
+</div>
+
+{% endblock main %}
